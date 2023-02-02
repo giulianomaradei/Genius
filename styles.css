@@ -94,17 +94,6 @@ body{
     height: 0.8px;
 }
 
-footer{
-    position: fixed;
-    bottom: 0;
-    width: 100%;
-    padding: 10px 0;
-}
-
-.footer-text{
-    font-size: var(--fs-footer);
-}
-
 
 
 @media (max-width: 768px){

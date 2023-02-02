@@ -1,0 +1,129 @@
+:root{
+    --fs-title: 5rem;
+    --fs-start: 1rem;
+    --fs-footer: 1rem;
+}
+
+
+@media (max-width: 768px){
+    :root{
+        --fs-title:3rem;
+        --fs-start: 0.6rem;
+        --fs-footer: 0.8rem;
+    }
+
+    .buttons-container{
+        width: 60% !important;
+    }
+}
+
+@media (max-width: 480px){
+    :root{
+        --fs-title:2.5rem;
+        --fs-start: 0.4rem;
+        --fs-footer: 0.6rem;
+    }
+    .buttons-container{
+        width: 70% !important;
+    }
+}
+
+
+
+
+
+body{
+    text-align: center;
+    font-family: 'Space Mono', monospace !important;
+    color: white;
+    background-color: black;
+    text-align: center;
+}
+
+.page-title{
+    font-weight: bold;
+    font-size: var(--fs-title);
+}
+
+#start-button{
+    color: white;
+    font-size: var(--fs-start);
+    background-color: black;
+    border: 2px solid white;
+    border-radius: 5px;
+    padding: 10px;
+}
+
+#start-button:hover{
+    background-color: rgb(212, 212, 212);
+    transition: .5s;
+}
+
+#start-button:active{
+    background-color: black;
+}
+
+.buttons-container{
+    display: flex;
+    flex-wrap: wrap;
+    width: 30%;
+    margin: 5% auto;
+    gap: 10px;
+    justify-content: center;
+}
+
+.buttons-container button{
+    width: 40%;
+    padding-bottom: 40%;
+    position: relative;
+    border-radius: 10%;
+}
+
+
+#blue{
+    background-color: blue;
+}
+
+#red{
+    background-color: red;
+}
+
+#yellow{
+    background-color: yellow;
+}
+
+#green{
+    background-color: green;
+}
+
+.blink{
+    box-sizing: border-box;
+    border: 2px solid white;
+}
+
+
+.buttons-container button:hover{
+    opacity: 0.5;
+}
+
+.buttons-container button:active{
+    opacity:1;
+}
+
+.line{
+    margin: 10px auto;
+    width: 40%;
+    background-color: white;
+    height: 0.8px;
+}
+
+footer{
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    padding: 10px 0;
+}
+
+.footer-text{
+    font-size: var(--fs-footer);
+}

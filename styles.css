@@ -4,40 +4,16 @@
     --fs-footer: 1rem;
 }
 
-@media (max-width: 480px){
-    :root{
-        --fs-title:3rem;
-        --fs-start: 0.8rem;
-        --fs-footer: 0.6rem;
-    }
-    .buttons-container{
-        width: 80% !important;
-    }
-    #start-button{
-        padding: 5px;
-        border: 1px solid white;
-    }
-}
-
-
-@media (max-width: 768px){
-    :root{
-        --fs-title:3rem;
-        --fs-start: 0.6rem;
-        --fs-footer: 0.8rem;
-    }
-
-    .buttons-container{
-        width: 60% !important;
-    }
-}
-
 body{
     text-align: center;
     font-family: 'Space Mono', monospace !important;
     color: white;
     background-color: black;
     text-align: center;
+}
+
+.title-container{
+    margin: 5%;
 }
 
 .page-title{
@@ -51,7 +27,7 @@ body{
     background-color: black;
     border: 2px solid white;
     border-radius: 5px;
-    padding: 10px;
+    padding: 5px;
 }
 
 #start-button:hover{
@@ -63,11 +39,16 @@ body{
     background-color: black;
 }
 
+.container{
+    position: relative;
+    height: 60vh;
+}
+
 .buttons-container{
     display: flex;
     flex-wrap: wrap;
     width: 30%;
-    margin: 5% auto;
+    margin: 0 auto;
     gap: 10px;
     justify-content: center;
 }
@@ -122,4 +103,34 @@ footer{
 
 .footer-text{
     font-size: var(--fs-footer);
+}
+
+
+
+@media (max-width: 768px){
+    :root{
+        --fs-title:3rem;
+        --fs-start: 0.6rem;
+        --fs-footer: 0.8rem;
+    }
+
+    .buttons-container{
+        width: 70% !important;
+        margin: 15% auto;
+    }
+}
+
+@media (max-width: 480px){
+    :root{
+        --fs-title:3rem;
+        --fs-start: 0.8rem;
+        --fs-footer: 0.6rem;
+    }
+    .buttons-container{
+        width: 100% !important;
+        margin: 30% auto;
+    }
+    #start-button{
+        border: 1px solid white !important;
+    }
 }

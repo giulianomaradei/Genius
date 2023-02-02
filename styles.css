@@ -134,3 +134,18 @@ footer{
         border: 1px solid white !important;
     }
 }
+
+@media (max-width: 363px){
+    :root{
+        --fs-title:3rem;
+        --fs-start: 1rem;
+        --fs-footer: 0.8rem;
+    }
+    .buttons-container{
+        width: 100% !important;
+        margin: 30% auto;
+    }
+    #start-button{
+        border: 1px solid white !important;
+    }
+}

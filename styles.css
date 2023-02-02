@@ -4,6 +4,21 @@
     --fs-footer: 1rem;
 }
 
+@media (max-width: 480px){
+    :root{
+        --fs-title:3rem;
+        --fs-start: 0.8rem;
+        --fs-footer: 0.6rem;
+    }
+    .buttons-container{
+        width: 80% !important;
+    }
+    #start-button{
+        padding: 5px;
+        border: 1px solid white;
+    }
+}
+
 
 @media (max-width: 768px){
     :root{
@@ -16,21 +31,6 @@
         width: 60% !important;
     }
 }
-
-@media (max-width: 480px){
-    :root{
-        --fs-title:2.5rem;
-        --fs-start: 0.4rem;
-        --fs-footer: 0.6rem;
-    }
-    .buttons-container{
-        width: 70% !important;
-    }
-}
-
-
-
-
 
 body{
     text-align: center;

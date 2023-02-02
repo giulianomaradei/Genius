@@ -13,7 +13,7 @@ body{
 }
 
 .title-container{
-    margin: 5%;
+    margin: 2% 0 5%;
 }
 
 .page-title{
@@ -58,6 +58,7 @@ body{
     padding-bottom: 40%;
     position: relative;
     border-radius: 10%;
+    box-sizing: border-box;
 }
 
 
@@ -78,7 +79,6 @@ body{
 }
 
 .blink{
-    box-sizing: border-box;
     border: 3px solid rgb(255, 255, 255);
 }
 
@@ -109,9 +109,9 @@ footer{
 
 @media (max-width: 768px){
     :root{
-        --fs-title:3rem;
-        --fs-start: 0.6rem;
-        --fs-footer: 0.8rem;
+        --fs-title:4rem;
+        --fs-start: 1rem;
+        --fs-footer: 1rem;
     }
 
     .buttons-container{
@@ -122,9 +122,9 @@ footer{
 
 @media (max-width: 480px){
     :root{
-        --fs-title:3rem;
-        --fs-start: 0.8rem;
-        --fs-footer: 0.6rem;
+        --fs-title:4rem;
+        --fs-start: 1rem;
+        --fs-footer: 0.8rem;
     }
     .buttons-container{
         width: 100% !important;

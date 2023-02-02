@@ -22,6 +22,9 @@ function start(){
     title.innerHTML = "Genius";
     title.style.color = "white";
 
+    turn = 0;
+    level = 1;
+    LastCollors = [];
     LastCollors.push(randomColor());
 
     show_order(0);
